@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☕ Café Nepré — Painel de Envios
 
-## Getting Started
+Painel interno para gestão dos envios de café do Café Nepré.  
+Permite visualizar para onde o café foi enviado, controlar dados detalhados e acompanhar gráficos e estatísticas.
 
-First, run the development server:
+---
+
+## 🚀 Funcionalidades principais
+
+- ✅ Cadastro de envios por CEP.
+- ✅ Registro da **quantidade (kg)** enviada.
+- ✅ Registro da **data do envio** manual.
+- ✅ Visualização em mapa interativo com estados destacados.
+- ✅ Lista filtrável por estado e por data.
+- ✅ Exportação dos envios em CSV.
+- ✅ Dashboard com:
+  - Total de pedidos e kg enviados.
+  - Gráfico de pizza com pedidos por estado.
+  - Gráfico de pizza com kg por estado.
+  - Detalhamento de kg por estado.
+
+---
+
+## 💻 Tecnologias
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Firebase](https://firebase.google.com/) (Firestore e Auth)
+- [Recharts](https://recharts.org/) (gráficos)
+
+---
+
+## ⚙️ Instalação local
+
+1️⃣ Clone o repositório:
 
 ```bash
+git clone https://github.com/SEU_USUARIO/SEU_REPO.git
+cd SEU_REPO
+2️⃣ Instale as dependências:
+
+bash
+Copiar
+Editar
+npm install
+3️⃣ Configure o Firebase:
+
+Crie um projeto no Firebase.
+
+Copie as credenciais para o arquivo lib/firebase.ts.
+
+ts
+Copiar
+Editar
+const firebaseConfig = {
+  apiKey: "SUA_API_KEY",
+  authDomain: "SEU_DOMINIO",
+  projectId: "SEU_PROJECT_ID",
+  storageBucket: "SEU_BUCKET",
+  messagingSenderId: "SEU_SENDER_ID",
+  appId: "SEU_APP_ID",
+};
+4️⃣ Rode o projeto:
+
+bash
+Copiar
+Editar
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌍 Acessar
+Painel principal: http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Dashboard: http://localhost:3000/dashboard
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+✅ Funcionalidades futuras
+Confirmação antes de excluir envio.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Edição de envios cadastrados.
 
-## Learn More
+Exportação em PDF.
 
-To learn more about Next.js, take a look at the following resources:
+Gráfico de evolução mensal.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Loader animado durante carregamento.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🤝 Contribuição
+Pull requests são bem-vindos! 💚
 
-## Deploy on Vercel
+🧑‍💻 Autor
+Seu Nome
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+☕ Licença
+Este projeto está licenciado sob a MIT License.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+yaml
+Copiar
+Editar
+
+---
+
+# ✅ **O que fazer agora**
+
+1️⃣ Crie um arquivo no seu projeto:
+
+README.md
+
+sql
+Copiar
+Editar
+
+2️⃣ Cola **todo o conteúdo acima**.  
+3️⃣ Salva.  
+4️⃣ Faz commit e push:
+
+```bash
+git add README.md
+git commit -m "docs: adiciona README completo"
+git push
